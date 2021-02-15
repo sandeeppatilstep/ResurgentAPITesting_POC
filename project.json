@@ -3,6 +3,8 @@
   "description": "REST API Automation Testing.\r\nHandles GET and POST Methods",
   "main": "Main.xaml",
   "dependencies": {
+    "RBanda.TestReportGenerator.Activities": "[1.4.1]",
+    "ReporterForUiPath.Activities": "[2.0.0]",
     "UiPath.System.Activities": "[20.10.3]",
     "UiPath.Testing.Activities": "[1.2.4]",
     "UiPath.UIAutomation.Activities": "[20.10.8]",

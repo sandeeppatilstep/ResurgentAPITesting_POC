@@ -1,0 +1,190 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="757.6,2585.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="38">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="575.2,2420.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="APIKEY" />
+      <Variable x:TypeArguments="x:Int32" Name="statusCode" />
+      <Variable x:TypeArguments="x:String" Name="getOutput" />
+      <Variable x:TypeArguments="njl:JObject" Name="getDeOut" />
+      <Variable x:TypeArguments="x:String" Name="copyright" />
+      <Variable x:TypeArguments="x:String" Name="mediaType" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="x:String" Name="url" />
+      <Variable x:TypeArguments="x:String" Name="serviceVersion" />
+      <Variable x:TypeArguments="x:String" Name="resurl" />
+      <Variable x:TypeArguments="x:String" Name="restitle" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="533.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="TC_02-GET Astronomy Picture of the day" />
+    <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="https://api.nasa.gov/planetary/apod?date=2019-12-19&amp;hd=true&amp;api_key=gWdSCwZ4cbddCnletdIUXZayH9gmq6t2Yla3MvUm" sap:VirtualizedContainerService.HintSize="533.6,22.4" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[getOutput]" StatusCode="[statusCode]" TimeoutMS="6000">
+      <ui:HttpClient.Attachments>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Attachments>
+      <ui:HttpClient.Cookies>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Cookies>
+      <ui:HttpClient.Headers>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Headers>
+      <ui:HttpClient.Parameters>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Parameters>
+      <ui:HttpClient.UrlSegments>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.UrlSegments>
+    </ui:HttpClient>
+    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="533.6,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[getDeOut]" JsonString="[getOutput]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="533.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[getDeOut]" />
+    <Assign sap:VirtualizedContainerService.HintSize="533.6,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[mediaType]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[getDeOut.SelectToken("media_type").ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="533.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[restitle]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[getDeOut.SelectToken("title").ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="533.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[restitle]" />
+    <Assign sap:VirtualizedContainerService.HintSize="533.6,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[resurl]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[getDeOut.SelectToken("url").ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="533.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[url]" />
+    <Assign sap:VirtualizedContainerService.HintSize="533.6,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[serviceVersion]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[getDeOut.SelectToken("service_version").ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="image" Description="Verify Media Type" DisplayName="Step Status" ExpectedResult="[mediaType]" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="Step-1" Status="Pass" TakeScreenshot="False" />
+    <uta:VerifyExpressionWithOperator KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="533.6,62.4" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyExpressionWithOperator.FirstExpression>
+        <InArgument x:TypeArguments="x:String">[mediaType]</InArgument>
+      </uta:VerifyExpressionWithOperator.FirstExpression>
+      <uta:VerifyExpressionWithOperator.SecondExpression>
+        <InArgument x:TypeArguments="x:String">["image"]</InArgument>
+      </uta:VerifyExpressionWithOperator.SecondExpression>
+    </uta:VerifyExpressionWithOperator>
+    <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="Apollo 17's Moonship" Description="Verify Title" DisplayName="Step Status" ExpectedResult="[title]" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="step-2" Status="Pass" TakeScreenshot="False" />
+    <uta:VerifyExpressionWithOperator KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="533.6,62.4" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyExpressionWithOperator.FirstExpression>
+        <InArgument x:TypeArguments="x:String">[restitle]</InArgument>
+      </uta:VerifyExpressionWithOperator.FirstExpression>
+      <uta:VerifyExpressionWithOperator.SecondExpression>
+        <InArgument x:TypeArguments="x:String">["Apollo 17's Moonship"]</InArgument>
+      </uta:VerifyExpressionWithOperator.SecondExpression>
+    </uta:VerifyExpressionWithOperator>
+    <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="https://apod.nasa.gov/apod/image/1912/AS17-149-22859-2v2SmlWmk1024.jpg" Description="Verify Url" DisplayName="Step Status" ExpectedResult="[url]" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_3" Name="Step-3" Status="Pass" TakeScreenshot="False" />
+    <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="v1" Description="Verify Service Version" DisplayName="Step Status" ExpectedResult="[serviceVersion]" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_4" Name="Step-4" Status="Pass" TakeScreenshot="False" />
+    <uta:VerifyExpressionWithOperator KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="533.6,62.4" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_4" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyExpressionWithOperator.FirstExpression>
+        <InArgument x:TypeArguments="x:String">[serviceVersion]</InArgument>
+      </uta:VerifyExpressionWithOperator.FirstExpression>
+      <uta:VerifyExpressionWithOperator.SecondExpression>
+        <InArgument x:TypeArguments="x:String">["v1"]</InArgument>
+      </uta:VerifyExpressionWithOperator.SecondExpression>
+    </uta:VerifyExpressionWithOperator>
+    <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="200" Description="Verify API response code" DisplayName="Step Status" ExpectedResult="[statusCode.ToString]" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_5" Name="Step-5" Status="Pass" TakeScreenshot="False" />
+    <uta:VerifyExpressionWithOperator KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="533.6,62.4" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_5" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyExpressionWithOperator.FirstExpression>
+        <InArgument x:TypeArguments="x:Int32">[statusCode]</InArgument>
+      </uta:VerifyExpressionWithOperator.FirstExpression>
+      <uta:VerifyExpressionWithOperator.SecondExpression>
+        <InArgument x:TypeArguments="x:Int32">[200]</InArgument>
+      </uta:VerifyExpressionWithOperator.SecondExpression>
+    </uta:VerifyExpressionWithOperator>
+  </Sequence>
+</Activity>

@@ -43,6 +43,21 @@
         "editingStatus": "InProgress",
         "testCaseId": "7dd5c99c-a303-4de9-9e6f-ea019127f754",
         "fileName": "CreateNewUser_POST.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e1d8f561-a240-46bf-abea-09ca68049107",
+        "fileName": "GetUserDetails_GET.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1ac7b2e7-b9df-4f1f-807c-8a0859f8a302",
+        "fileName": "GET_Astronomy Picture of the Day.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c30c749b-027d-4142-a751-043c8ce166ca",
+        "fileName": "TestSuite.xaml"
       }
     ],
     "modernBehavior": false

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="651.2,2208" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="564.8,2208" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
       <x:String>System.Activities</x:String>
@@ -109,7 +109,7 @@
           <Literal x:TypeArguments="x:String">Sandeep Patil</Literal>
         </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="email">
-          <Literal x:TypeArguments="x:String">sandeepvkkkPatil@sandeepp.in</Literal>
+          <Literal x:TypeArguments="x:String">sandeepvkkkbPatil@sandeepp.in</Literal>
         </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="gender">
           <Literal x:TypeArguments="x:String">Male</Literal>
@@ -165,13 +165,13 @@
         <InArgument x:TypeArguments="x:String">["Sandeep"]</InArgument>
       </uta:VerifyExpressionWithOperator.SecondExpression>
     </uta:VerifyExpressionWithOperator>
-    <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="[&quot;Added user email id is &quot;+userEmailId]" Description="Verify User Email id" DisplayName="Step Status" ExpectedResult="sandeepvkkkPatil@sandeepp.in" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="Step-2" Status="Pass" TakeScreenshot="False" />
+    <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="[&quot;Added user email id is &quot;+userEmailId]" Description="Verify User Email id" DisplayName="Step Status" ExpectedResult="sandeepvkkkbPatil@sandeepp.in" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="Step-2" Status="Pass" TakeScreenshot="False" />
     <uta:VerifyExpressionWithOperator KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="533.6,62.4" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
       <uta:VerifyExpressionWithOperator.FirstExpression>
         <InArgument x:TypeArguments="x:String">[userEmailId]</InArgument>
       </uta:VerifyExpressionWithOperator.FirstExpression>
       <uta:VerifyExpressionWithOperator.SecondExpression>
-        <InArgument x:TypeArguments="x:String">["sandeepvkkkPatil@sandeepp.in"]</InArgument>
+        <InArgument x:TypeArguments="x:String">["sandeepvkkkbPatil@sandeepp.in"]</InArgument>
       </uta:VerifyExpressionWithOperator.SecondExpression>
     </uta:VerifyExpressionWithOperator>
     <ra:StepStatus CodeBlock="{x:Null}" ContinueOnError="{x:Null}" statusInfo="{x:Null}" ActualResult="[&quot;Added user status is &quot;+userStatus]" Description="Verify User Status" DisplayName="Step Status" ExpectedResult="Added user status should be Active" sap:VirtualizedContainerService.HintSize="533.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_3" Name="Step-3" Status="Pass" TakeScreenshot="False" />
